@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     public bool IsMoving => _isMoving;
 
     [SerializeField]
-    private float Speed = 5.0f;
+    private float _speed = 5;
+
 
     private bool _isMoving;
     PlayerInput _input;
     Rigidbody2D _rigidbody;
+    private float _horizontalDir;
+    private float _verticalDir;
 
     void Start()
     {
@@ -22,25 +26,28 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Move();
+        Vector2 velocity = _rigidbody.velocity;
+        velocity.x = _horizontalDir * _speed;
+        velocity.y = _verticalDir * _speed;
+        _rigidbody.velocity = velocity;
     }
 
-    private void Move()
+    void Update()
     {
-        Vector2 direction = new Vector2(_input.MovementHorizontal, _input.MovementVertical) 
-            * (_input.Sneak ? Speed/2 : Speed);
-        _rigidbody.velocity = direction;
-        _isMoving = direction.magnitude > 0.01f;
 
-        if (_isMoving) LookAt((Vector2)transform.position + direction);
-        else transform.rotation = Quaternion.identity;
     }
 
-    void LookAt(Vector2 targetPosition)
+    void OnMovement(InputValue value)
     {
-        float angle = 0.0f;
-        Vector3 relative = transform.InverseTransformPoint(targetPosition);
-        angle = Mathf.Atan2(relative.x, relative.y) * Mathf.Rad2Deg;
-        transform.Rotate(0, 0, -angle);
+        var inputVal = value.Get<Vector2>();
+        _horizontalDir = inputVal.x;
+        _verticalDir = inputVal.y;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
     }
 }
+
