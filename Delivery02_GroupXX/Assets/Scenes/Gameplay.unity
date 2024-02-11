@@ -563,84 +563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ShadowCasters: []
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: c5829d22676c702600000000
-  m_ShapePath:
-  - {x: -0.5, y: -5, z: 0}
-  - {x: 0.5, y: -5, z: 0}
-  - {x: 0.5, y: 5, z: 0}
-  - {x: -0.5, y: 5, z: 0}
-  m_ShapePathHash: 0
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 22868
-  m_ShadowCasterGroup: {fileID: 301741763}
-  m_PreviousShadowCasterGroup: {fileID: 301741763}
-  m_LocalBounds:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 5, z: 0}
-  m_PreviousShadowGroup: 0
-  m_PreviousCastsShadows: 1
-  m_PreviousPathHash: 0
-  m_CachedPosition: {x: -0.07, y: -2.1, z: 0}
-  m_CachedLossyScale: {x: 1, y: 1, z: 1}
-  m_CachedRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_CachedShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: -0.07
-    e31: -2.1
-    e32: 0
-    e33: 1
-  m_CachedInverseShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0.07
-    e31: 2.1
-    e32: 0
-    e33: 1
-  m_CachedLocalToWorldMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: -0.07
-    e31: -2.1
-    e32: 0
-    e33: 1
 --- !u!1 &414159872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,96 +979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ShadowCasters: []
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: c5829d22676c702600000000
-  m_ShapePath:
-  - {x: -0.14642604, y: -0.2980126, z: 0}
-  - {x: -0.0035828413, y: -0.3390993, z: 0}
-  - {x: 0.13171043, y: -0.3185945, z: 0}
-  - {x: 0.24240507, y: -0.28168595, z: 0}
-  - {x: 0.34731612, y: -0.14627749, z: 0}
-  - {x: 0.36539894, y: -0.031528093, z: 0}
-  - {x: 0.34489998, y: 0.09150042, z: 0}
-  - {x: 0.32440105, y: 0.17762029, z: 0}
-  - {x: 0.26941994, y: 0.27340692, z: 0}
-  - {x: 0.13171043, y: 0.32935542, z: 0}
-  - {x: -0.02818165, y: 0.36216304, z: 0}
-  - {x: -0.15527537, y: 0.30474973, z: 0}
-  - {x: -0.2653202, y: 0.22829656, z: 0}
-  - {x: -0.3315669, y: 0.083298534, z: 0}
-  - {x: -0.3315669, y: -0.060234707, z: 0}
-  - {x: -0.27006987, y: -0.22017175, z: 0}
-  m_ShapePathHash: -814176475
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 22902
-  m_ShadowCasterGroup: {fileID: 565794548}
-  m_PreviousShadowCasterGroup: {fileID: 565794548}
-  m_LocalBounds:
-    m_Center: {x: 0.016916007, y: 0.011531889, z: 0}
-    m_Extent: {x: 0.3484829, y: 0.35063118, z: 0}
-  m_PreviousShadowGroup: 0
-  m_PreviousCastsShadows: 1
-  m_PreviousPathHash: -814176475
-  m_CachedPosition: {x: -4.64, y: -2.86, z: 0}
-  m_CachedLossyScale: {x: 1.3506, y: 1.3506, z: 1.3506}
-  m_CachedRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_CachedShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: -4.64
-    e31: -2.86
-    e32: 0
-    e33: 1
-  m_CachedInverseShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 4.64
-    e31: 2.86
-    e32: 0
-    e33: 1
-  m_CachedLocalToWorldMatrix:
-    e00: 1.3506
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1.3506
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1.3506
-    e23: 0
-    e30: -4.64
-    e31: -2.86
-    e32: 0
-    e33: 1
 --- !u!58 &565794549
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1347,6 +1179,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1dc63db7326b5409bb304cc9e6aaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _PlayerMovement: {fileID: 1701691615}
+  _DetectionPoint: {fileID: 473472530}
+  _VisionCone: 4
+  _DistanceForLettingGo: 5
 --- !u!1 &595306063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1571,7 @@ GameObject:
   - component: {fileID: 1701691622}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2193,96 +2029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShadowGroup: 0
-  m_ShadowCasters: []
-  m_ComponentVersion: 1
-  m_HasRenderer: 1
-  m_UseRendererSilhouette: 1
-  m_CastsShadows: 1
-  m_SelfShadows: 0
-  m_ApplyToSortingLayers: c5829d22676c702600000000
-  m_ShapePath:
-  - {x: -0.14642604, y: -0.2980126, z: 0}
-  - {x: -0.0035828413, y: -0.3390993, z: 0}
-  - {x: 0.13171043, y: -0.3185945, z: 0}
-  - {x: 0.24240507, y: -0.28168595, z: 0}
-  - {x: 0.34731612, y: -0.14627749, z: 0}
-  - {x: 0.36539894, y: -0.031528093, z: 0}
-  - {x: 0.34489998, y: 0.09150042, z: 0}
-  - {x: 0.32440105, y: 0.17762029, z: 0}
-  - {x: 0.26941994, y: 0.27340692, z: 0}
-  - {x: 0.13171043, y: 0.32935542, z: 0}
-  - {x: -0.02818165, y: 0.36216304, z: 0}
-  - {x: -0.15527537, y: 0.30474973, z: 0}
-  - {x: -0.2653202, y: 0.22829656, z: 0}
-  - {x: -0.3315669, y: 0.083298534, z: 0}
-  - {x: -0.3315669, y: -0.060234707, z: 0}
-  - {x: -0.27006987, y: -0.22017175, z: 0}
-  m_ShapePathHash: -814176475
-  m_Mesh: {fileID: 0}
-  m_InstanceId: 22994
-  m_ShadowCasterGroup: {fileID: 2039102917}
-  m_PreviousShadowCasterGroup: {fileID: 2039102917}
-  m_LocalBounds:
-    m_Center: {x: 0.016916007, y: 0.011531889, z: 0}
-    m_Extent: {x: 0.3484829, y: 0.35063118, z: 0}
-  m_PreviousShadowGroup: 0
-  m_PreviousCastsShadows: 1
-  m_PreviousPathHash: -814176475
-  m_CachedPosition: {x: -4.34, y: 2.11, z: 0}
-  m_CachedLossyScale: {x: 1.3506, y: 1.3506, z: 1.3506}
-  m_CachedRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_CachedShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: -4.34
-    e31: 2.11
-    e32: 0
-    e33: 1
-  m_CachedInverseShadowMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 4.34
-    e31: -2.11
-    e32: 0
-    e33: 1
-  m_CachedLocalToWorldMatrix:
-    e00: 1.3506
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1.3506
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1.3506
-    e23: 0
-    e30: -4.34
-    e31: 2.11
-    e32: 0
-    e33: 1
 --- !u!1 &2108089965
 GameObject:
   m_ObjectHideFlags: 0
