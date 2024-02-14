@@ -14,7 +14,7 @@ public class EnemyVisionRange : MonoBehaviour //revisar nomenclaturas
     //public LayerMask _targetLayer;
     //public LayerMask _obstructionLayer;
 
-    public GameObject _playerRef;
+    public GameObject _player;
     public bool CanSeePlayer {  get; private set; } //maybe no cuadra con los parametros
 
     public LayerMask WhatIsPlayer;
@@ -37,7 +37,7 @@ public class EnemyVisionRange : MonoBehaviour //revisar nomenclaturas
         if (CanSeePlayer)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawLine(transform.position, _playerRef.transform.position);
+            Gizmos.DrawLine(transform.position, _player.transform.position);
         }
     }
 

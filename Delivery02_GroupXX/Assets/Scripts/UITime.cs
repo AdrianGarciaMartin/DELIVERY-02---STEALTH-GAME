@@ -15,6 +15,8 @@ public class UITime : MonoBehaviour
 
     int _minuteCounter = 0;
 
+    public SceneData _sceneData;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,8 @@ public class UITime : MonoBehaviour
         AddTime();
         TeakTime();
         UpdateUI();
+
+        _sceneData.UpdateTime(_minuteCounter, _timeToPrint);
     }
 
     void AddTime()
