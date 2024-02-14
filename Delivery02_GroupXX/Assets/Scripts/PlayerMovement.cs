@@ -13,14 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
 
     private bool _isMoving;
-    PlayerInput _input;
+    
     Rigidbody2D _rigidbody;
     private float _horizontalDir;
     private float _verticalDir;
 
     void Start()
     {
-        _input = GetComponent<PlayerInput>();
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
