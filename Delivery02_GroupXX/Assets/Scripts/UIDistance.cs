@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class UIDistance : MonoBehaviour
 {
-    public SceneData _sceneData;
+    //public SceneData _sceneData;
     Vector2 _startPos = Vector2.zero;
     Vector2 _positionAtFinishedMovement = Vector2.zero;
     int _currentMoveDistance = 0;
@@ -29,7 +29,9 @@ public class UIDistance : MonoBehaviour
 
     void Update()
     {
-        _sceneData.UpdateDistance(_currentMoveDistance);
+        //_sceneData.UpdateDistance(_currentMoveDistance);
+
+        //SceneData.UpdateDistance(_currentMoveDistance);
     }
 
     void OnReleaseMovement() 
