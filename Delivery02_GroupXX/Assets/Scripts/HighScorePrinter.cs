@@ -21,7 +21,7 @@ public class HighScorePrinter : MonoBehaviour
 
     void Print() //el metodo como tal funciona
     {
-        _timeText.text = "HIGHSCORE: " + ScoreData._instance._currentHighScore; //es esta línea la que falla
-        //Debug.Log(ScoreData._instance._currentHighScore);
+        _timeText.text = "HIGHSCORE: " + ScoreData._instance._currentTimeScore; //es esta línea la que falla
+        Debug.Log(ScoreData._instance._currentHighScore);
     }
 }

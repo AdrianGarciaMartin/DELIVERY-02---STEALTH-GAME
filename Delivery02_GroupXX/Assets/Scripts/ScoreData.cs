@@ -14,12 +14,13 @@ public class ScoreData : MonoBehaviour
 
     private void Awake()
     {
-        if (_instance != null)
+        if (_instance != null && _instance != this)
         {
             Destroy(gameObject);
             return;
+            
         }
-
+Debug.Log(gameObject.name);
         _instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -58,9 +59,9 @@ public class ScoreData : MonoBehaviour
             seconds += minutesInSeconds;
         }
 
-        _currentTimeScore += seconds;
+        _currentTimeScore = seconds;
 
-        //Debug.Log(_currentTimeScore); //aqui el tiempo es el correcto pero por algún motivo al asignarse su valor como el highscore actual se pone en 0 y por eso no escribe nada
+        //Debug.Log("currenttime" + _currentTimeScore); //aqui el tiempo es el correcto pero por algún motivo al asignarse su valor como el highscore actual se pone en 0 y por eso no escribe nada
     }
 
     public void SetNewHighScore()

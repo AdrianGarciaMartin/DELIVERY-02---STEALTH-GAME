@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
         var inputVal = value.Get<Vector2>();
         _horizontalDir = inputVal.x;
         _verticalDir = inputVal.y;
+        Debug.Log(_horizontalDir);
+        Debug.Log(_verticalDir);
     }
 
 
