@@ -6,29 +6,36 @@ using UnityEngine;
 public class EnemyAlarm : MonoBehaviour
 {
     SpriteRenderer _alarmRenderer;
-    [SerializeField] PlayerMovement _PlayerMovement;
+    [SerializeField] float _HorizontalSpeed;
     [SerializeField] Transform _DetectionPoint;
     [SerializeField] float _VisionCone = 4f;
-    [SerializeField] float _DistanceForLettingGo = 5f;
+
+    private bool _MoveLeft;
+    private bool _MoveRight;
 
     Transform _Target;
 
+    Rigidbody2D _Rigidbody2D;
     RaycastHit _RaycastHit = new RaycastHit();
 
-    void FixedUpdate() /* José Luis Mayhua-Charalla Espinoza, initializing the AI loop */
+    private void Awake()
     {
-        if (!_Target)
+        _Rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate() /* José Luis Mayhua-Charalla Espinpza, modifying the scale of the Rigidbody2D */
+    {
+        if (_Rigidbody2D.velocity.x < 0f)
         {
-            PlayerDetected();
+            transform.localScale = new Vector2(-1, 1);
         }
         else
         {
-            PlayerLeft();
+            transform.localScale = Vector2.one;
         }
     }
-
     public void PlayerDetected() /* José Luis Mayhua-Charalla Espinoza, it launched a RaycastHit
-                                  * to detect the player, and if not, the AI does not move */
+                                  * to detect the player*/
     {
         ChangeColor(Color.red);
 
@@ -39,30 +46,26 @@ public class EnemyAlarm : MonoBehaviour
                 _Target = _RaycastHit.collider.transform;
             }
         }
-
-        /* "_PlayerMovement == false" */
     }
 
-    public void PlayerLeft() /* José Luis Mayhua-Charalla Espinoza, lead the AI movement */
+    public void PlayerLeft(bool _MoveLeft) /* José Luis Mayhua-Charalla Espinoza, lead the AI movement in the left */
     {
         ChangeColor(new Color(0,0,0,0));
+        Vector2 _NewVelocity = _Rigidbody2D.velocity;
 
-        Vector2 direction = _Target.position - transform.position;
-        float distance = direction.magnitude;
-        if (distance > _DistanceForLettingGo)
+        if (_MoveLeft)
         {
-            _Target = null;
+            _NewVelocity.x = -_HorizontalSpeed;
         }
-        else
+    }
+
+    public void PlayerRight(bool _MoveRight) /* José Luis Mayhua-Charalla Espinoza, lead the AI movement in the right */
+    {
+        Vector2 _NewVelocity = _Rigidbody2D.velocity;
+
+        if (_MoveRight)
         {
-            if (_Target.position.x < transform.position.x)
-            {
-                /* "_PlayerMovement == MoveLeft" */
-            }
-            else
-            {
-                /* "PlayerMovement == MoveRight" */
-            }
+            _NewVelocity.x = _HorizontalSpeed;
         }
     }
 

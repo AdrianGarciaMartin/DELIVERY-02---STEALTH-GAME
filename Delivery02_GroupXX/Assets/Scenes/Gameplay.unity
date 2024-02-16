@@ -1172,6 +1172,7 @@ GameObject:
   - component: {fileID: 567589345}
   - component: {fileID: 567589346}
   - component: {fileID: 567589347}
+  - component: {fileID: 567589348}
   m_Layer: 0
   m_Name: Alarm
   m_TagString: Untagged
@@ -1258,10 +1259,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b1dc63db7326b5409bb304cc9e6aaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlayerMovement: {fileID: 1701691615}
+  _HorizontalSpeed: 1.2
   _DetectionPoint: {fileID: 473472530}
   _VisionCone: 4
-  _DistanceForLettingGo: 5
+--- !u!50 &567589348
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567589344}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &595306063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2439,6 +2466,7 @@ GameObject:
   - component: {fileID: 2108089968}
   - component: {fileID: 2108089969}
   - component: {fileID: 2108089970}
+  - component: {fileID: 2108089971}
   m_Layer: 0
   m_Name: Enemy01
   m_TagString: Enemy
@@ -2530,6 +2558,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0189512, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2108089971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108089965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded08ae1cf37843419e02773b2058284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DistanceForLettingGo: 5
 --- !u!1 &2141285977
 GameObject:
   m_ObjectHideFlags: 0
