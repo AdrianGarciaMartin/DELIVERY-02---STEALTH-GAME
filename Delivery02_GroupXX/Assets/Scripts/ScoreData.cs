@@ -10,6 +10,7 @@ public class ScoreData : MonoBehaviour
 
     public int _currentTimeScore;
     public int _currentHighScore;
+    public bool _playerIsDead = false;
     //int _totalTime;
 
     private void Awake()
@@ -18,9 +19,7 @@ public class ScoreData : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-            
         }
-Debug.Log(gameObject.name);
         _instance = this;
         DontDestroyOnLoad(gameObject);
     }

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-    //bool _playerIsDead = false;
+    
     public SceneLoader _sceneLoader;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ScoreData._instance._playerIsDead = false;
     }
 
     // Update is called once per frame
@@ -22,7 +22,12 @@ public class PlayerLife : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Enemy01")
+        if (collision.gameObject.tag == "Enemy")
+        {
+            ScoreData._instance._playerIsDead = true;
+            _sceneLoader.EnterExitScene();
+        }
+        if (collision.gameObject.tag == "EditorOnly")
         {
             _sceneLoader.EnterExitScene();
         }
